@@ -1,0 +1,17 @@
+{
+    "contents" : "library(devtools)\nlibrary(MCrt)\nZ <- as.matrix(mtcars)\nX <- Z[,6]\nX <- cbind(rep(1, length(Z[,1])), X)\nY <- Z[,1]\n#Calling method Intervals\nMCcont(X,Y, 10,40,\"t\",.05,0,2,10000,\"Intervals\",1) # for t-test, the range of Y is devided in 1 Interval\nMCcont(X,Y, 10,40,\"r\",.05,0,2,10000,\"Intervals\",3) # for robust t-test, the range of Y is devided in 3 Intervals\n##Calling method KNN\nMCcont(X,Y, 10,40,\"t\",.05,0,2,10000,\"KNN\",3) # for t-test, with 3 nearest neighbors initialy assign to the generation process\nMCcont(X,Y, 10,40,\"r\",.05,0,2,10000,\"KNN\",6) # for robust t-test, with 6 nearest neighbors initialy assign to the generation process\n",
+    "created" : 1455149365535.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "2836647109",
+    "id" : "F772FF08",
+    "lastKnownWriteTime" : 4318217136,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: MCrt\nType: Package\nTitle: Empirical p-value of t - and robust t - test\nVersion: 1.0\nDate: 2016-02-10\nAuthor: RT\nMaintainer: RT <rteam.teamr@gmail.com>\nDescription: The Package includes functions aimed to simulate data from one known realisation and run Monte Carlo simulations to test empirical power of t - and robust t - test.\nLicense: GPL (>= 2)\nImports:\n    Rcpp (>= 0.12.2),\n    RcppDE,\n    RcppArmadillo,\n    parallel,\n    Rlab,\n    Rcpp,\n    inline,\n    foreign,\n    intpoint,\n    datasets,\n    devtools(>= 1.10.0.9000),\n    roxygen2(>= 5.0.1)  \nLinkingTo: \n          Rcpp, \n          RcppArmadillo\nRoxygenNote: 5.0.1\n",
+    "created" : 1455147902643.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "169665988",
+    "id" : "31E598BB",
+    "lastKnownWriteTime" : 1455202043,
+    "path" : "~/Dropbox/MC_bootstrapping/MCrt/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}
