@@ -1,11 +1,15 @@
-
 // [[Rcpp::depends(RcppArmadillo)]]
 #include <RcppArmadillo.h>
 #include <Rcpp.h>
 #include <iostream>
 #include <string>
 #include <vector>
-#include <random>
+//#include <stdio.h>      /* printf, scanf, puts, NULL */
+//#include <stdlib.h>     /* srand, rand */
+#include <cstdlib>
+//#include <ctime>
+//#include <time.h>       /* time *///#include <random>
+//#include <random>
 using namespace Rcpp;
 using namespace std;
 using namespace arma;
@@ -121,14 +125,17 @@ return vv;
 // [[Rcpp::export]]
 double randomizer(NumericVector vvec) {
     //std::vector<int> numbers { 11 , 88 , -5 , 13 , 4 , 121 , 77 , 2 } ;
-    std::random_device seed ;
+    //std::random_device seed ;
     // generator
-    std::mt19937 engine( seed( ) ) ;
+    //std::mt19937 engine( seed( ) ) ;
     // number distribution
-    std::uniform_int_distribution<int> choose( 0 , vvec.size( ) - 1 ) ;
- 
- 
-    return vvec[ choose( engine ) ] ;
+    //std::uniform_int_distribution<int> choose( 0 , vvec.size( ) - 1 ) ;
+    int v1;
+    //std::srand(std::time(0)); //use current time as seed for random generator, not used as if in the same second run the same index is returned
+    v1 = rand() % vvec.size();   
+    //return v1 ;
+    return vvec[v1];
+    //return vvec[choose(engine)];
 }
 
 
