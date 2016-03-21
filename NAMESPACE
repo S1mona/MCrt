@@ -2,4 +2,5 @@
 
 export(MCcont)
 export(cppMCcont15)
+importFrom(Rcpp,evalCpp)
 useDynLib(MCrt)

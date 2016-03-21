@@ -26,8 +26,9 @@
 #'  MCcont(X,Y, 10,40,"r",.05,0,2,10000,"Intervals",3) # for robust t-test, the range of Y is devided in 3 Intervals
 #'  ##Calling method KNN
 #'  MCcont(X,Y, 10,40,"t",.05,0,2,10000,"KNN",3) # for t-test, with 3 nearest neighbors initialy assign to the generation process
-#'  MCcont(X,Y, 10,40,"r",.05,0,2,10000,"KNN",6) # for robust t-test, with 6 nearest neighbors initialy assign to the generation process
+#'  MCcont(X,Y, 10,40,"r",.05,0,2,10000,"KNN",6) # for robust t-test, with 6 nearest neighbors initialy assign to the generation process t-test, with 6 nearest neighbors initialy assign to the generation process
 #' @export
+#' @importFrom Rcpp evalCpp
 #' @useDynLib MCrt
 MCcont<-function(x,y, ymin,ymax,test,alpha,betabarj,j,MC,method,par){
   #knn number of neighbors

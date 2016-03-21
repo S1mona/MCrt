@@ -5,10 +5,12 @@ Version: 1.0
 Date: 2016-02-10
 Author: RT
 Maintainer: RT <rteam.teamr@gmail.com>
-Description: The Package includes functions aimed to simulate data from one known realisation and run Monte Carlo simulations to test empirical power of t - and robust t - test.
+Description: The Package includes functions aimed to simulate data from one
+    known realisation and run Monte Carlo simulations to test empirical power of t -
+    and robust t - test.
 License: GPL (>= 2)
 Imports:
-    Rcpp (>= 0.12.2),
+    Rcpp (>= 0.12.3),
     RcppDE,
     RcppArmadillo,
     parallel,
@@ -18,9 +20,7 @@ Imports:
     foreign,
     intpoint,
     datasets,
-    devtools(>= 1.10.0.9000),
-    roxygen2(>= 5.0.1)  
-LinkingTo: 
-          Rcpp, 
-          RcppArmadillo
+    roxygen2(>= 5.0.1) 
+LinkingTo: Rcpp,
+    RcppArmadillo
 RoxygenNote: 5.0.1

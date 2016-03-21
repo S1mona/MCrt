@@ -27,7 +27,7 @@ Maintainer: \packageMaintainer{MCrt}
 \keyword{ package }
 \seealso{
 ~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+~~ \code{\link[<MCrt>:<MCrt>-package]{<MCrt>}} ~~
 }
 \examples{
 %% ~~ simple examples of the most important functions ~~
